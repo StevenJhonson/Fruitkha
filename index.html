@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="company-logos/favicon.png">
+    <title>Fruitkha</title>
+    </head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .home-page {
+        background-color: #6c757d;
+        font-family: sans-serif;
+        font-weight: bold;
+        height: 650px;
+    }
+    .fruitkha {
+        display: flex;
+        width: 80%;
+        height: 120px;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+
+    }
+    .fruitkha-pic img {
+        width: 180px;
+    }
+    .thing ul {
+        display: flex;
+        list-style: none;
+        color: white;
+    }
+    .thing ul li {
+        margin-left: 30px;
+    }
+    .thing ul li:hover {
+        color: orange;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .fonts {
+        text-align: center;
+        color: white;
+        margin-top: 120px;
+    }
+    .fonts h3 {
+        color: orange;
+        margin-bottom: 30px;
+    }
+    .fonts h1 {
+        margin-bottom: 30px;
+        font-size: 60px;
+    }
+    .fonts button {
+        padding: 15px 25px;
+        background-color: orange;
+        border-radius: 30px;
+        border: none;
+        color: white;
+    }
+    .fonts .nth-2 {
+        background-color: transparent;
+        border: solid 1.5px orange;
+        margin-left: 20px;
+    }
+    .fonts button:hover {
+        background-color: rgb(20, 20, 54);
+        color: orange;
+    }
+    .fonts .nth-2:hover {
+        background-color: orange;
+        color: white;
+    }
+
+
+
+
+
+    .home-footer {
+        height: 200px;
+        background-color: #f5f5f5;
+    }
+
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        font-family: sans-serif;
+    }
+
+    .home-footer-content {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 200px;
+    }
+
+    .free {
+        display: flex;
+        align-items: center;
+    }
+
+    .icon {
+        color: orangered;
+        border: dotted orangered 3px;
+        /* border: dotted; nuqtali chiziq */
+        border-radius: 50%;
+        font-size: 50px;
+        padding: 15px;
+    }
+
+    .free .text {
+        margin-left: 20px;
+    }
+
+    .text h3 {
+        font-weight: 900px;
+    }
+
+    .text p {
+        color: grey;
+        margin-top: 5px;
+    }
+
+
+
+
+
+    .section-text {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px 0;
+    }
+    .section-text hr {
+        width: 5%;
+        margin: 20px 0;
+        background-color: orangered;
+        height: 3px;
+        border: none;
+    }
+    .section-card {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    .card {
+        /* border: 1px solid black; */
+        width: 30%;
+        height: 500px;
+        text-align: center;
+        box-shadow: 0 0  20px rgb(209, 206, 206);
+        cursor: pointer;
+    }
+    .card:hover {
+        box-shadow: none;
+    }
+    .card img {
+        width: 100%;
+        height: 250px;
+    }
+    .card button {
+        padding: 10px 20px;
+        /* border: solid orangered 1px; */
+        border: none;
+        background-color: orangered;
+        border-radius: 20px;
+        margin-top: 10px;
+        color: white;
+        cursor: pointer;
+    }
+    .card p {
+        margin: 10px 0;
+    }
+    .card h2 {
+         margin-top: 50px;
+    }
+    .card button:hover {
+        background-color: black;
+        color: orangered;
+    }
+
+
+
+
+
+
+
+    .cont {
+        background-color: #051922;
+        color: white;
+        height: 550px;
+        font-family: sans-serif;
+    }
+
+    .row {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .row1 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding-top: 100px;
+        margin-bottom: 150px;
+    }
+
+    .col1 {
+        width: 20%;
+    }
+
+    .col1 hr {
+        margin: 17px 0;
+        margin-right: 180px;
+        /* width: 40%; orassini ochishda ishlatiladi */
+        border: solid 1px orangered;
+    }
+
+    .col2 {
+        width: 20%;
+    }
+
+    .col2 hr {
+        margin: 17px 0;
+        margin-right: 180px;
+        border: solid 1px orangered;
+    }
+    .col3 {
+        width: 20%;
+    }
+
+    .col3 hr {
+        margin: 17px 0;
+        margin-right: 180px;
+        border: solid 1px orangered;
+    }
+    .col3 ul li {
+        list-style: none;
+        margin-top: 15px;
+    }
+    .col3 ul li b {
+        color: orangered;
+    }
+    .col4 {
+        width: 20%;
+    }
+
+    .col4 hr {
+        margin: 17px 0;
+        margin-right: 180px;
+        border: solid 1px orangered;
+    }
+    .col4 p {
+        margin-bottom: 20px;
+    }
+    form {
+        display: flex;
+    }
+    form input {
+        background-color: #051922;
+        border: 1px solid #051922;
+        padding: 20px;
+        outline: none;
+    }
+    form input::placeholder{
+        color: white;
+    }
+    .submit {
+        color: white;
+    }
+    .rol1 {
+        margin-left: 130px;
+        margin-top: 15px;
+    }
+    span {
+        color: orangered;
+    }
+    .icons i {
+        color: white;
+        margin-left: 30px;
+    }
+    .icons i:hover {
+        color: orange;
+    }
+</style>
+<body>
+    <div class="home-page">
+        <div class="fruitkha">
+
+            <div class="fruitkha-pic">
+                <img src="company-logos/logo.png" alt="">
+            </div>
+
+            <div class="thing">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Pages</li>
+                    <li>News</li>
+                    <li>Contact</li>
+                    <li>Shop</li>
+                </ul>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-search"></i>
+            </div>
+
+        </div>
+
+        <div class="fonts">
+            <h3>F R E SH &nbsp; & &nbsp; O R G A N I C</h3>
+            <h1>Delicious Seasonal Fruits</h1>
+            <Button>Fruit Collection</Button>
+            <Button class="nth-2">Contact Us</Button>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="home-footer">
+
+        <div class="container">
+
+            <div class="home-footer-content">
+
+                <div class="free">
+
+                    <div class="icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+
+                    <div class="text">
+                        <h3>Free shipping</h3>
+                        <p>When order over $75</p>
+                    </div>
+
+                </div>
+
+                <div class="free">
+
+                    <div class="icon">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+
+                    <div class="text">
+                        <h3>24/7 Support</h3>
+                        <p>Get support all day</p>
+                    </div>
+
+                </div>
+
+                <div class="free">
+
+                    <div class="icon">
+                        <i class="fas fa-sync"></i>
+                    </div>
+
+                    <div class="text">
+                        <h3>Refund</h3>
+                        <p>Get refund within 3 days!</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="section">
+
+        <div class="container">
+
+            <div class="section-text">
+                <h2> <span style="color: orangered;">Our</span> Products</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus <br> adipisci debitis sed corporis
+                    nulla nesciunt.</p>
+            </div>
+
+            <div class="section-card">
+                <div class="card">
+                    <img src="products/product-img-1.jpg" width="200px" alt="">
+                    <h2>Strowberry</h2>
+                    <p>per kg</p>
+                    <h3>85$</h3>
+                    <button>Add to card</button>
+                </div>
+                <div class="card">
+                    <img src="products/product-img-2.jpg" width="200px" alt="">
+                    <h2>Berry</h2>
+                    <p>per kg</p>
+                    <h3>75$</h3>
+                    <button>Add to card</button>
+                </div>
+                <div class="card">
+                    <img src="products/product-img-3.jpg" width="200px" alt="">
+                    <h2>Lemon</h2>
+                    <p>per kg</p>
+                    <h3>35$</h3>
+                    <button>Add to card</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="cont">
+        <div class="row">
+            <div class="row1">
+
+                <div class="col1">
+                    <h2>About us</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quisquam nulla dolor illum a soluta
+                        facilis aspernatur, dolorum fugit, obcaecati animi. Laudantium accusantium
+                        debitis dolores delectus ex quam possimus! Placeat unde obcaecati cupiditate.</p>
+                </div>
+
+                <div class="col2">
+                    <h2>Get in Touch</h2>
+                    <hr>
+                    <p>34/8, East Hukupara, Gifirtok, Sadan</p><br>
+                    <p>support@fruitkha.com</p><br>
+                    <p>+00 111 222 3333</p>
+                </div>
+
+                <div class="col3">
+                    <h2>Pages</h2>
+                    <hr>
+                    <ul>
+                        <li> <b> &gt;</b> Home</li>
+                        <li> <b> &gt;</b> About</li>
+                        <li> <b> &gt;</b> Shop</li>
+                        <li> <b> &gt;</b> News</li>
+                        <li> <b> &gt;</b> Contact</li>
+                    </ul>
+                </div>
+
+                <div class="col4">
+                    <h2>Subscribe</h2>
+                    <hr>
+                    <p>Subscribe to our mailing list to get the latest updates.</p>
+                    <form>
+                    <input type="email" placeholder="Email">
+                    <input class="submit" type="submit" value="telegram">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+        <div class="row2">
+            <div class="rol1">
+                <p>copyright &copy; 2019- <span>Imran Hossain,</span> All Rights Reserved.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
